@@ -1,0 +1,248 @@
+/* ========== Write Story Page Container ========== */
+.write-story-container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* ========== Header Section ========== */
+  .write-story-header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 9rem;
+  }
+  
+  .write-story-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.4em;
+  }
+  
+  .write-story-subtitle {
+    font-size: 1.6em;
+    color: #555;
+    margin-bottom: 0.5em;
+  }
+  
+  .write-story-description {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 1.5em;
+    padding: 0 20px;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  /* ========== Form Section ========== */
+  .write-story-form-wrapper {
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    background-color: #fff5f2;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .write-story-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .write-story-label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .write-story-input,
+  .write-story-textarea {
+    width: 100%;
+    padding: 0.9em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+    box-sizing: border-box;
+    font-family: inherit;
+  }
+  
+  .write-story-textarea {
+    resize: vertical;
+    min-height: 140px;
+  }
+  
+  .write-story-button {
+    background-color: #ff7043;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.2s ease;
+  }
+  
+  .write-story-button:hover {
+    background-color: #ff5722;
+  }
+  
+  .write-story-required {
+    color: red;
+  }
+  
+  /* ========== Overlay & Alert ========== */
+  .write-story-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .write-story-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1001;
+  }
+  
+  .write-story-alert-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    margin-top: 1em;
+  }
+  
+  .write-story-alert-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ========== Submitted Stories Section ========== */
+  .submitted-stories-title {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+    gap: 30px;
+    margin: 20px auto 60px;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* ========== Story Card ========== */
+  .story-card-modern {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .story-card-modern:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Tag badge */
+  .story-tag {
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .story-tag:hover {
+    background-color: #e67e22;
+    color: #fff;
+  }
+  
+  /* Name */
+  .story-heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 8px;
+  }
+  
+  /* Date */
+  .story-date {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+    margin-bottom: 16px;
+  }
+  
+  /* Story Content */
+  .story-text {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 90%;
+  }
+  
+  /* Delete Button */
+  .story-delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .story-delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* ========== Responsive ========== */
+  @media (max-width: 768px) {
+    .story-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .write-story-title {
+      font-size: 2em;
+    }
+  
+    .write-story-subtitle {
+      font-size: 1.3em;
+    }
+  }
+  

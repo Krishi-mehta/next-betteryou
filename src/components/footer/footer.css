@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;500&display=swap");
+
+.footer {
+  background-color: #2e4a48;
+  color: #fff;
+  padding: 60px 20px 30px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #a2d0d6;
+}
+
+.footer-about p,
+.footer-newsletter p {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #79c2c2;
+  text-decoration: underline;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.btn-primary {
+  background-color: #4b7c78;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3d6663;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #446c6a;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #cbdcdc;
+}
