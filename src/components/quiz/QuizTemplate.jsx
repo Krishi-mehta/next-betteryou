@@ -3,7 +3,7 @@
 import React, { useState, useRef } from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-// import "../relationshipQuiz.css";
+import ".//relationshipQuiz.css";
 
 const QuizTemplate = ({ 
   questions, 

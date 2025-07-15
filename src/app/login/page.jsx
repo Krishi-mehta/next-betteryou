@@ -43,7 +43,7 @@ function Login() {
             headers: { "Content-Type": "application/json" },
             // body: JSON.stringify({ email, password }),
             body: JSON.stringify({ email: form.email, password: form.password }),
-
+              
           });
 
       const result = await response.json();
@@ -52,7 +52,7 @@ function Login() {
       if (success) {
         localStorage.setItem('token', jwtToken);
         localStorage.setItem('loggedInUser', name);
-        sessionStorage.setItem('justLoggedIn', 'true');
+        // sessionStorage.setItem('justLoggedIn', 'true');
 
         Swal.fire({
           title: 'Login Successful!',

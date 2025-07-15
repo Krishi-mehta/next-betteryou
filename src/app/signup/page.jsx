@@ -44,6 +44,7 @@ function SignUp() {
 
   const handleSignup = async () => {
     if (!validate()) return;
+    
 
     try {
       const url = "/api/signup"; //simple route

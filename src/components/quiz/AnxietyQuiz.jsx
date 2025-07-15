@@ -1,5 +1,6 @@
 import React from "react";
 import QuizTemplate from "./QuizTemplate";
+import './relationshipQuiz.css'
 
 const questions = [
   {
@@ -166,8 +167,7 @@ const introduction = (
       level of anxiety you’re living with, and to help you with that, we present
       to you yet another free quiz. <br /> <br />
       Welcome to Better You’s “Do I Have Anxiety?” free anxiety test – your first
-      step towards understanding your emotional and mental well-being. <br />{" "}
-      <br />
+      step towards understanding your emotional and mental well-being. <br /> <br />
       You must have had moments of unease or nervousness, as we’d like to put
       it, before anything new you try, right? This sliver of nervousness is a
       common experience, but anxiety isn’t just nervousness – it’s a relentless
@@ -179,36 +179,35 @@ const introduction = (
       address them. Here’s where our anxiety test comes in! Our free anxiety
       quiz is designed to help you assess your emotional state, and provide you
       with insights into your feelings that might indicate the presence of an
-      anxiety disorder.
-      <br /> <br />
+      anxiety disorder. <br /> <br />
       Know that self-awareness is the first step to bring a positive change in
       your life and this test is just one of those small steps that can set you
-      on a path to recovery and healing.
-      <br /> <br />
-      <p style={{ fontSize: "22px", fontWeight: "bold" }}>
-        Why Take This Anxiety Test?{" "}
-      </p>
-      We also work diligently to provide you with instant results upon
-      completing the test. The immediate result can help guide you to your next
-      steps in seeking support and moving forward on the path of recovery.{" "}
-      <br />
-      <br />
+      on a path to recovery and healing. <br /> <br />
       Note: Anxiety never looks the same to everybody. What you experience might
       be different from what others do, so do not compare your experiences and
       symptoms with others. This is one of the reasons why a test can’t
       conclusively provide a formal diagnosis. However, this online anxiety test
       is a questionnaire-based test that can provide you with an overview of
-      your anxiety levels. <br />
+      your anxiety levels. <br /> <br />
+    </p>
+    <p style={{ fontSize: "22px", fontWeight: "bold" }}>
+      Why Take This Anxiety Test?
+    </p>
+    <p className="relationship-p">
+      We also work diligently to provide you with instant results upon
+      completing the test. The immediate result can help guide you to your next
+      steps in seeking support and moving forward on the path of recovery. <br />
       <br />
-      <p style={{ fontSize: "22px", fontWeight: "bold" }}>
-        Please note that this test is not an official test or diagnosis and can
-        only offer an indication of your anxiety. You should seek a mental
-        health professional for an in-depth diagnosis.
-      </p>
       <i>Let's begin!</i>
+    </p>
+    <p style={{ fontSize: "22px", fontWeight: "bold" }}>
+      Please note that this test is not an official test or diagnosis and can
+      only offer an indication of your anxiety. You should seek a mental health
+      professional for an in-depth diagnosis.
     </p>
   </>
 );
+
 
 const resultMessages = {
   high: (
